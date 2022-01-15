@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="points">
+      <li><buttonclass="active"></button></li>
+      <li><button></button></li>
+      <li><button></button></li>
+    </div>
+      <style>
+          :root {
+      --white: #FFFFFF;
+      --black: #000000;
+      --very-light-pink: #C7C7C7;
+      --text-input-field: #F7F7F7;
+      --hospital-green: #ACD9B2;
+      --sm: 14px;
+      --md: 16px;
+      --lg: 18px;
+    }
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+    }
+    .points {
+        display: flex;
+        justify-content: center;
+      }
+      .points li {
+        list-style: none;
+        margin-inline: 15px;
+      }
+      .points button {
+        background-color: var(--very-light-pink) 0.5;
+        border-radius: 50%;
+        height: 8px;
+        padding: 1px;
+        width: 8px;
+        border: red solid;
+      }
+      .points.active {
+        border: solid 1px var(--hospital-green);
+        background-color: var(--hospital-green);
+      }
+    </style>
+
+</body>
+</html>
